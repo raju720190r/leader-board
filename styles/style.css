@@ -110,6 +110,42 @@ hr{
         background-color: #FFE4E8;
         color:  #FF4A60;
         padding: 5px 10px;
-        margin-right: 10px;
+        margin-right:100px;
         border-radius: 20px;
     }
+    /* footer */
+        footer{
+         background-color: rgb(66, 60, 60);
+         color: #F3F1FF;
+         text-align: center;
+         padding: 10px 0;
+        }
+      /*-------------------
+       Media queries 
+      --------------------*/
+      @media only screen and (max-width:688px){
+         .container{
+            width: 100%; 
+         }
+         .players, .blogs, .courses{
+         grid-template-columns: repeat(1, 1fr);
+         justify-items: center;
+         }
+         .player, .blog{
+            flex-direction: column;
+         }
+         .course{
+            margin-bottom: 30px;
+         }
+         
+      }
+      /* tablet devices */
+      @media only screen and (min-width:688px) and (max-width:992px){
+         .container{
+            width: 100%;
+         }
+         .players,.courses{
+            grid-template-columns: repeat(2, 1fr);
+         }
+         
+      }
